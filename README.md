@@ -13,7 +13,7 @@ JavaScript
 - Contact form alert
 
 ## Demo
-[Live Demo](https://starlit-axolotl-735697.netlify.app)
+[Live Demo](https://splendorous-crepe-96e648.netlify.app)
 
 ## Screenshot
 ![Landing Page](images/pscr.png)
