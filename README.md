@@ -5,7 +5,7 @@ Simple landing page project for portfolio purposes.
 ## Technologies
 - HTML
 - CSS
-JavaScript
+- JavaScript
 
 ## Features
 - Responsive layout

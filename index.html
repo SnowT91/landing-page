@@ -11,8 +11,7 @@
         <div class="container header-container">
             <a href="#home" class="logo">Landing</a>
         
-            <nav>
-                <a href="#home">Home</a>
+            <nav class="nav">
                 <a href="#about">About</a>
                 <a href="#services">Services</a>
                 <a href="#contact">Contact</a>
@@ -20,15 +19,10 @@
         </div>
     </header>
 
-    <section id="hero">
+    <section id="hero" class="hero reveal">
         <h2>Welcome to my website</h2>
         <p>Simple landing page for portfolio</p>
-        <button onclick="scrollToContact()">Contact Me</button>
-    </section>
-
-    <section id="home" class="hero reveal">
-        <h2>Home</h2>
-        <p>This is a demo landing page project.</p>
+        <button class="hero-btn" onclick="scrollToContact()">Contact Me</button>
     </section>
 
     <section id="about" class="about reveal">
@@ -44,8 +38,8 @@
     <section id="contact" class="contact reveal">
         <h2>Contact</h2>
         <form onsubmit="handleSubmit(event)">
-            <input type="text" placeholder="Name" required>
-            <input type="email" placeholder="Email" required>
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
             <button type="submit">Send</button>
         </form>
     </section>
@@ -54,7 +48,7 @@
         <p>&copy; 2026 My Portfolio</p>
     </footer>
 
-    <button id="back-to-top" class="back-to-top" aria-label="Back to top"> </button>
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">↑</button>
     
     <script src="script.js"></script>
 </body>

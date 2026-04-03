@@ -9,7 +9,7 @@ body {
     line-height: 1.6;
 }
 
-header {
+.header {
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -30,6 +30,12 @@ header {
     font-weight: bold;
     text-decoration: none;
     color: #111827;
+}
+
+.nav {
+    display: flex;
+    align-self: center;
+    gap: 20px;
 }
 
 .nav a {
@@ -103,7 +109,7 @@ footer {
     transform: translateY(0);
 }
 
-.back-to-top.hover {
+.back-to-top:hover {
     transform: translateY(-3px);
 }
 
