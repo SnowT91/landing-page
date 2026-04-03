@@ -106,3 +106,41 @@ footer {
 .back-to-top.hover {
     transform: translateY(-3px);
 }
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        justify-content: center;
+        gap: 12px;
+        padding: 12px 0;
+    }
+
+    .nav {
+        justify-content: center;
+        gap: 14px;
+    }
+
+    .nav a {
+        font-size: 0.95rem;
+    }
+    
+    .back-to-top {
+        right: 16px;
+        bottom: 16px;
+        width: 44px;
+        height: 44px;
+    }
+}
+
+.btn,
+.hero-btn,
+.cta-button {
+    transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+.btn:hover,
+.hero-btn:hover,
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
