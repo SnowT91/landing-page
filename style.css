@@ -45,9 +45,11 @@ body {
     transition: color 0.2s ease, transform 0.2s ease;
 }
 
-.nav a:hover {
+.nav a:hover,
+.hero-btn:hover {
     color: #2563eb;
-    transform: translateY(-1px);
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
 section {
@@ -58,6 +60,16 @@ section {
     background-color: #61dafb;
     color: #282c34;
     text-align: center;
+}
+
+#hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
 }
 
 button {
@@ -101,6 +113,8 @@ footer {
     transform: translateY(12px);
     transition: all 0.3s ease;
     z-index: 999;
+    width: var(--back-to-top-size);
+    height: var(--back-to-top-size);
 }
 
 .back-to-top.show {
@@ -111,6 +125,10 @@ footer {
 
 .back-to-top:hover {
     transform: translateY(-3px);
+}
+
+.back-to-top:root {
+    --back-to-top-size: 48px;
 }
 
 @media (max-width: 768px) {
@@ -136,6 +154,9 @@ footer {
         width: 44px;
         height: 44px;
     }
+    :root {
+        --back-to-top-size:44px;
+    }
 }
 
 .btn,
@@ -145,8 +166,15 @@ footer {
 }
 
 .btn:hover,
-.hero-btn:hover,
 .cta-button:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
+
+.hero-btn:focus,
+.btn:focus,
+.cta-button:focus {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+}
+
