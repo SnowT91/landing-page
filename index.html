@@ -19,10 +19,10 @@
         </div>
     </header>
 
-    <section id="hero" class="hero reveal">
+    <section id="home" class="hero reveal">
         <h2>Welcome to my website</h2>
         <p>Simple landing page for portfolio</p>
-        <button class="hero-btn" onclick="scrollToContact()">Contact Me</button>
+        <a href="#contact" class="hero-btn">Contact Me</a>
     </section>
 
     <section id="about" class="about reveal">
@@ -40,11 +40,11 @@
         <form onsubmit="handleSubmit(event)">
             <input type="text" name="name" placeholder="Name" required>
             <input type="email" name="email" placeholder="Email" required>
-            <button type="submit">Send</button>
+            <button type="submit" aria-label="Send message">Send</button>
         </form>
     </section>
 
-    <footer>
+    <footer class="footer">
         <p>&copy; 2026 My Portfolio</p>
     </footer>
 
