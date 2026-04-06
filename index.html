@@ -11,7 +11,7 @@
         <div class="container header-container">
             <a href="#home" class="logo">Landing</a>
         
-            <nav class="nav">
+            <nav class="nav" aria-label="Main navigation">
                 <a href="#about">About</a>
                 <a href="#services">Services</a>
                 <a href="#contact">Contact</a>
@@ -20,28 +20,36 @@
     </header>
 
     <section id="home" class="hero reveal">
-        <h2>Welcome to my website</h2>
-        <p>Simple landing page for portfolio</p>
-        <a href="#contact" class="hero-btn">Contact Me</a>
+        <div class="container hero-content">
+            <h2>Welcome to my website</h2>
+            <p>Simple landing page for portfolio</p>
+            <a href="#contact" class="hero-btn">Contact Me</a>
+        </div>
     </section>
 
     <section id="about" class="about reveal">
-        <h2>About Me</h2>
-        <p>This is a demo landing page project.</p>
+        <div class="container">
+            <h2>About Me</h2>
+            <p>This is a demo landing page project.</p>
+        </div>
     </section>
 
     <section id="services" class="services reveal">
-        <h2>Services</h2>
-        <p>This is a demo landing page project.</p>
+        <div class="container">
+            <h2>Services</h2>
+            <p>This is a demo landing page project.</p>
+        </div>
     </section>
 
     <section id="contact" class="contact reveal">
-        <h2>Contact</h2>
-        <form onsubmit="handleSubmit(event)">
-            <input type="text" name="name" placeholder="Name" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <button type="submit" aria-label="Send message">Send</button>
-        </form>
+        <div class="container">
+            <h2>Contact</h2>
+            <form onsubmit="handleSubmit(event)" aria-label="Contaact form">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <button type="submit">Send</button>
+            </form>
+        </div>
     </section>
 
     <footer class="footer">
