@@ -31,3 +31,13 @@ Simple landing page project for portfolio purposes.
 - Added reveal-on-scroll section animations
 - Added back to top button
 - Improved responsive navigation and mobile UI
+
+### V1.2
+
+- Iproved semantic HTML structure with `<main>` and `h1`
+- Added reusable `.container` layout for better content alignment
+- Enhanced hero section and CTA button styling
+- Styled contact form with improved spacing and accessibility
+- Added better focus states for keybord navigation
+- Optimized back-to-top button sizing and transitions
+- Improved reveal animation performance with `IntersectionObserver`
